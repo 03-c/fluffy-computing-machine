@@ -1,6 +1,12 @@
 konkatynacja: "+" pozwala łączyć dwa teksty ze sobą (albo jeden tekst i jedną np. liczbę) <br>
 przykłady: `"Hello " + "World!"`; `"Error: " + error`; `"number 9: " + 9 + "oraz 5: " + 5`
 
+porównywanie:
+- `x == y` sprawdza czy `x` jest równe `y`, jeżeli `x` lub `y` nie są takim samym typem, są konwertowane na tekst
+- `x === y` sprawdza czy `x` jest równe `y`, jeżeli `x` lub `y` nie są takim samym typem, wynikiem jest `false`
+- `isNaN(x)` sprawdza czy `x` jest NaN (Not a Number). <br>
+  **nie można** do tego użyć `==` ani `===`, ponieważ JavaScript jest dziwny
+
 zmienne:
 - `const` robi że nie da sie zmienić wartości zmiennej
 - `let` pozwala na zmianę wartości
@@ -19,8 +25,12 @@ klasy:
 
 pętle:
 - `for (const x of y) {}` - `y` jest listą, `x` będzie każdym elementem w tej liście
+
+listy:
 - `x.split(y)` - `x` jest tekstem, split dzieli go na części między każdym `y`. <br>
   np. `"meow,mrrp,purr".split(",")` -> `["meow", "mrrp", "purr"]`
+- `x.join(y)` połączy wszystkie wartości `x` poprzez `y`
+  np. `["a", "b", "c"].join(".")` -> `"a.b.c"`
 
 style:
 - `[element].style.[styl] = [wartość]` robi to samo co `[element] { [styl]: [wartość] }` by robiło w CSS
@@ -30,10 +40,10 @@ funkcje:
   można zyskać wartość tych argumentów używając `arg1`, `arg2` i `arg3`.
   (nazwy są przykładowe, można nazwać dowolnie)
 - `name("meow", 3, false)` wywołuje funkcje "name" z poniższymi argumentami: <br>
-  \- `arg1` = "meow" <br>
-  \- `arg2` = 3 <br>
+  \- `arg1` = `"meow"` <br>
+  \- `arg2` = `3` <br>
   \- `arg3` = `false`
-- `name()` wykonuje funkcje "name" bez argumentów, wszystkie argumenty będą zwracać `undefined`
+- `name()` wykonuje funkcje "name" bez argumentów, wszystkie argumenty będą miały wartość `undefined`
 
 daty:
 - `new Date()` tworzy element daty z aktualnym czasem
@@ -41,4 +51,11 @@ daty:
 
 matematyka:
 - `Math.floor(x)` - `x` jest liczbą, zostanie ona zaokrąglona do dołu (do jedynek)
+- `Math.ceil(x)` - `x` jest liczbą, zostanie ona zaokrąglona do góry (do jedynek)
 - `Math.abs(x)` - `x` jest liczbą. funkcja konwertuje liczby negatywne na pozytywne
+- `Math.random()` zwraca losową liczbę między 0 a 1, np. `0.7833459459288891`
+- `Math.min(x, y)` - `x` i `y` są liczbami. funkcja zwraca najmniejszą liczbę. <br>
+  ona akceptuje nielimitowaną ilość argumentów, użyłem tylko dwa dla przykładu
+- `Math.max(x, y)` - to samo co `Math.min()`, ale zwraca największą liczbę
+- `Math.PI` zwraca liczbę pi z dokładnością do 15 liczb po przecinku (`3.141592653589793`)
+- `Math.sqrt(x)` - `x` jest liczbą. funkcja zwraca pierwiastek kwadratowy z `x`
