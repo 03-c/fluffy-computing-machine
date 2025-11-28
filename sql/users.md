@@ -1,4 +1,4 @@
-[user] ma format `'nazwa_uzytkownika'@'host'`, np. `'admin'@'localhost'@`
+[user] ma format `'nazwa_uzytkownika'@'host'`, np. `'admin'@'localhost'`
 
 - `DROP USER [user]` usuwa użytkownika [user]
 - `CREATE USER [user] IDENTIFIED BY '[password]'` tworzy użytkownika z hasłem [password]
