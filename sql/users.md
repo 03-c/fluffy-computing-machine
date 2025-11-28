@@ -7,3 +7,4 @@
   - nazwa bazy danych może mieć gwiazdki. przykłady: np. `*.*`, `employees.*`, `employees.managers`
   - np. `GRANT SELECT, INSERT, DELETE ON employees.* TO [user]`
 - `SHOW GRANTS FOR [user]` pokazuje permisje użytkownika [user]
+- `ALTER USER [user] IDENTIFIED BY '[password]'` zmienia hasło [user] na [password]
