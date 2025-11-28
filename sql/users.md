@@ -8,3 +8,4 @@
   - np. `GRANT SELECT, INSERT, DELETE ON employees.* TO [user]`
 - `SHOW GRANTS FOR [user]` pokazuje permisje użytkownika [user]
 - `ALTER USER [user] IDENTIFIED BY '[password]'` zmienia hasło [user] na [password]
+- `FLUSH PRIVILEGES` odświeża uprawnienia użytkowników ([nie jest potrzebne jak używasz powyższych komend[[1]](https://stackoverflow.com/a/47155873))
