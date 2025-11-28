@@ -12,8 +12,3 @@ sprawdzanie ciasteczek: Inspect Element (F12) > Application > Cookies > domena
 ustawianie localStorage: `localStorage.setItem("nazwa", "wartość")` <br>
 zyskiwanie localStorage: `localStorage.getItem("nazwa")` <br>
 sprawdzanie localStorage: inspect element (F12) > Application > Local Storage > domena
-
-dodawanie klasy do elementu: `[...].classList.add("className")` <br>
-usuwanie klasy z elementu: `[...].classList.remove("className")` <br>
-przełączanie klasy na elemencie: `[...].classList.toggle("className")` <br>
-<sup>jak element posiada klasę to ją usuwa, jak nie ma to dodaje</sup>
